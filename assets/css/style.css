@@ -130,8 +130,12 @@ button:hover {
     transition: 0.5s;
 }
 
-.arrow-bottom svg {
-    height: 15px;
-    width: 15px;
-    border: none;
+a svg {
+    font-size: 15px;
+    border: 2px solid gray;
+    padding: 20px;
+    border-radius: 60px;
+
+    display: flex;
+    margin: 52px auto;
 }
