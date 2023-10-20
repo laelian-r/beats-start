@@ -9,14 +9,13 @@
 }
 
 body {
-    height: 100vh;
     width: 100wh;
 }
 
 
 /* HEADER */
 
-header {
+.header {
     position: fixed;
     top: 0;
     width: 100%;
@@ -71,6 +70,7 @@ nav input {
     background-color: #f2f2f2;
     border: none;
     outline: none;
+    color: black;
 }
 
 .logs {
@@ -139,3 +139,64 @@ a svg {
     display: flex;
     margin: 52px auto;
 }
+
+
+/* ARTICLES */
+
+
+
+/* article .article {
+    padding: 20px;
+}
+
+article main {
+    padding: 20px;
+}
+
+article #img {
+    display: flex;
+    max-width: 178%;
+    max-height: 178%;
+    transform-origin: center;
+    transition: transform 0.4s ease-in-out;
+    border-radius: 16px;
+} */
+
+/* Toutes les cartes */
+.cards{
+    display:flex;
+    /* flex-wrap:wrap; */
+    margin-top: 5%;
+    padding: 20px;
+    justify-content: center;
+  }
+  .cards .head{
+    margin-right: 20px;
+    cursor:pointer;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    height: 750px;
+    width: 300px;
+  }
+  .cards .head img{
+    display: flex;
+    height: 300px;
+    /* width: 300px; */
+    margin: 0 auto;
+  }
+
+  .cards .body p{
+    margin-top: 0px;
+    padding: 5px;
+  }
+
+  h2 {
+    padding: 20px;
+    padding-bottom: 30px;
+  }
+
+  h3 {
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+  /* Fin de toutes les cartes */
