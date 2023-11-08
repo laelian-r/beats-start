@@ -163,4 +163,124 @@ article #img {
 
 /* Toutes les cartes */
 
+article {
+  background-color: #f2f2f2;
+  width: 300px;
+  height: 600px;
+  box-shadow: 3px 3px 3px gray;
+  margin: 20px;
+  border-radius: 16px;
+}
+
+article img {
+  height: 300px;
+  border-radius: 16px;
+}
+
+article h2 {
+  color: gray;
+  padding-left: 15px;
+  font-weight: 500;
+}
+
+article p {
+  padding-bottom: 25px;
+}
+
+article a {
+  color: gray;
+  padding-left: 15px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+}
+
+article a:hover {
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+article a:hover img {
+  color: gray;
+  padding-left: 15px;
+  font-weight: 500;
+  transition: 0.5s;
+  display: block;
+  height: 15px;
+  align-items: center;
+}
+
+article a img {
+  display: none;
+}
+
 /* Fin de toutes les cartes */
+
+/* MOBILE */
+
+@media(max-width: 483px) {
+  /* HEADER */
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px 5px;
+  background-color: white;
+}
+
+.logo {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  border-radius: 30px;
+  font-size: 70px;
+  height: 0;
+  width: 80px;
+  margin-left: 3%;
+  top: -5%;
+}
+
+nav a {
+  font-weight: 500;
+  font-size: 18px;
+  align-items: center;
+  color: black;
+  padding-left: 20px;
+
+  position: relative;
+  left: 12%;
+}
+
+.active {
+  color: gray;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+nav a:hover{
+  color: gray;
+  transition: 0.3s;
+}
+
+nav input {
+  font-size: 15px;
+  margin-left: 160px;
+  height: 50px;
+  width: 450px;
+  border-radius: 30px;
+  padding: 15px;
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+  color: black;
+}
+
+.logs {
+  display: none;
+}
+}
