@@ -4,13 +4,17 @@
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
-    box-sizing: 10px;
+    box-sizing: border-box;
     font-family: 'Poppins';
 }
 
 body {
     width: 100wh;
+    height: 100vh;
 }
+
+
+/* MENU */
 
 
 /* HEADER */
@@ -27,15 +31,19 @@ body {
 }
 
 .logo {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    border-radius: 30px;
-    font-size: 70px;
-    height: 0;
-    width: 80px;
-    margin-left: 3%;
-    top: -5%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  border-radius: 30px;
+  font-size: 70px;
+  height: 0;
+  width: 80px;
+  margin-left: 3%;
+  top: -5%;
+}
+
+a i {
+  display: none;
 }
 
 nav a {
@@ -102,33 +110,35 @@ p {
     width: 56%;
 }
 
-button {
-    cursor: pointer;
-    margin-left: 5%;
-    margin-top: 40px;
-    height: 55px;
-    width: 230px;
-    border-radius: 30px;
-    background-color: white;
-    border: 2px solid black;
-    font-size: 20px;
-    font-weight: 500;
-    transition: 0.5s;
+.btn {
+  display: flex;
+  margin-top: 40px;
+  margin-left: 5%;
+  border: 2px solid black;
+  border-radius: 30px;
+  color: black;
+  height: 55px;
+  width: 230px;
+  font-size: 20px;
+  font-weight: 500;
+  transition: 0.5s;
+  align-items: center;
+  justify-content: center;
 }
 
-button:hover {
-    cursor: pointer;
-    margin-left: 5%;
-    margin-top: 40px;
-    height: 55px;
-    width: 250px;
-    border-radius: 30px;
-    background-color: black;
-    color: white;
-    border: 2px solid black;
-    font-size: 20px;
-    font-weight: 500;
-    transition: 0.5s;
+.btn:hover {
+  cursor: pointer;
+  margin-left: 5%;
+  margin-top: 40px;
+  height: 55px;
+  width: 250px;
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  font-size: 20px;
+  font-weight: 500;
+  transition: 0.5s;
 }
 
 .descente img {
@@ -219,8 +229,51 @@ article a img {
 
 /* MOBILE */
 
-@media(max-width: 483px) {
-  /* HEADER */
+@media(max-width: 1490px) {
+  nav a {
+      display: none;
+  }
+
+  .active {
+      display: none;
+  }
+
+  nav a:hover{
+      display: none;
+  }
+
+  nav input {
+      display: none;
+  }
+
+  .logs {
+      display: none;
+  }
+
+  a i {
+    display: flex;
+    font-size: 40px;
+    position: absolute;
+    right: 3%;
+    top: 33%;
+    color: black;
+  }
+
+  p {
+    width: 90%;
+  }
+
+  hr {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  .descente {
+    display: none;
+  }
+}
+
+/* @media(max-width: 483px) {
 
 .header {
   position: fixed;
@@ -283,4 +336,4 @@ nav input {
 .logs {
   display: none;
 }
-}
+} */
