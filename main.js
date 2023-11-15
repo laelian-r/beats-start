@@ -1,10 +1,3 @@
-let menu = document.querySelector("#menu");
-
-function functionMenu() {
-    alert("Hello");
-    alert(menu.value);
-}
-
-menu.addEventListener('click', ()=> {
-    alert("Hello, world!")
+icons.addEventListener("click", () => {
+    header.classList.toggle("active"); // Utiliser "classList" pour effectuer le basculement de la classe
 });

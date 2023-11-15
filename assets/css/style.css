@@ -19,7 +19,7 @@ body {
 
 /* HEADER */
 
-.header {
+/* header {
     position: fixed;
     top: 0;
     width: 100%;
@@ -28,6 +28,17 @@ body {
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px 5px;
     background-color: white;
+} */
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px 5px;
+  background-color: white;
 }
 
 .logo {
@@ -46,6 +57,11 @@ a i {
   display: none;
 }
 
+#cross {
+  display: none;
+  right: 3.3%;
+}
+
 nav a {
     font-weight: 500;
     font-size: 18px;
@@ -55,6 +71,22 @@ nav a {
 
     position: relative;
     left: 12%;
+}
+
+nav ul {
+  position: fixed;
+  display: flex;
+  /* left: -100%; */
+  top: 5%;
+  left: 10%;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  height: auto;
+  text-align: center;
+  align-items: center;
+  transition: 0.25s;
 }
 
 .active {
@@ -70,7 +102,7 @@ nav a:hover{
 
 nav input {
     font-size: 15px;
-    margin-left: 160px;
+    margin-left: 40px;
     height: 50px;
     width: 450px;
     border-radius: 30px;
@@ -85,10 +117,10 @@ nav input {
     font-weight: 500;
     font-size: 18px;
     color: gray;
-    padding-left: 20px;
+    /* padding-left: 20px; */
 
     position: relative;
-    left: 15%;
+    left: 180%;
 }
 
 
@@ -141,12 +173,18 @@ p {
   transition: 0.5s;
 }
 
-.descente img {
+/* .descente svg {
     height: 40px;
     padding: 20px;
     border-radius: 100%;
-    display: flex;
+    display: block;
     margin: 52px auto;
+} */
+
+.descente img {
+  display: flex;
+  height: 50px;
+  margin: 60px auto;
 }
 
 
@@ -173,13 +211,27 @@ article #img {
 
 /* Toutes les cartes */
 
+section {
+  background-color: rgba(226, 226, 226, 0.533);
+  padding: 20px;
+  flex-direction: row;
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  width: 100%;
+  box-shadow: 0px 0px 10px 0px gray;
+}
+
 article {
   background-color: #f2f2f2;
   width: 300px;
-  height: 600px;
-  box-shadow: 3px 3px 3px gray;
+  height: auto;
+  box-shadow: 2px 2px 2px 2px gray;
   margin: 20px;
+  margin-bottom: 20px;
   border-radius: 16px;
+  cursor: default;
+  flex-direction: row;
 }
 
 article img {
@@ -190,7 +242,7 @@ article img {
 article h2 {
   color: gray;
   padding-left: 15px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 article p {
@@ -203,26 +255,42 @@ article a {
   font-weight: 500;
   display: flex;
   align-items: center;
-  transition: 0.5s;
+  transition: 0.25s;
+  padding-bottom: 10px;
 }
 
-article a:hover {
+/* article a:hover {
   font-weight: 500;
   transition: 0.5s;
-}
+} */
 
-article a:hover img {
+/* article a:hover svg {
   color: gray;
   padding-left: 15px;
   font-weight: 500;
-  transition: 0.5s;
+  transition: 0.25s;
   display: block;
   height: 15px;
   align-items: center;
+} */
+
+article a {
+  font-weight: 600;
 }
 
-article a img {
+article a svg {
+  color: gray;
+  padding-left: 15px;
+  font-weight: 500;
+  transition: 0.25s;
   display: none;
+  height: 20px;
+  align-items: center;
+}
+
+article a:hover svg {
+  display: flex;
+  transition: 0.25s;
 }
 
 /* Fin de toutes les cartes */
@@ -230,37 +298,80 @@ article a img {
 /* MOBILE */
 
 @media(max-width: 1490px) {
-  nav a {
-      display: none;
-  }
-
-  .active {
-      display: none;
-  }
-
-  nav a:hover{
-      display: none;
-  }
-
-  nav input {
-      display: none;
-  }
-
-  .logs {
-      display: none;
-  }
-
-  a i {
+  #icons {
     display: flex;
     font-size: 40px;
     position: absolute;
     right: 3%;
-    top: 33%;
     color: black;
+  }
+
+  .icons {
+    display: block;
+  }
+  #icons::before {
+    content: "\2630";
+  }
+  #header #icons::before {
+    content: "\2715";
+  }
+
+  nav a {
+    font-weight: 500;
+    font-size: 18px;
+    align-items: center;
+    color: black;
+    padding-left: -20px;
+
+    position: relative;
+    left: -12%;
+  }
+
+  .logs {
+    padding-left: -20px;
+    position: relative;
+    left: -12%;
+  }
+
+  nav ul {
+      position: fixed;
+      display: flex;
+      /* left: -100%; */
+      top: 0;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      height: 100vh;
+      height: auto;
+      text-align: center;
+      align-items: center;
+      padding: 60px;
+      transition: 0.25s;
+      background-color: red;
+  }
+  nav li {
+    position: relative;
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+  }
+  .search {
+    display: flex;
+    width: 200px;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  #active ul {
+    left: 0;
   }
 
   p {
     width: 90%;
+  }
+
+  .btn {
+    margin-bottom: 80px;
   }
 
   hr {
