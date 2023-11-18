@@ -127,7 +127,7 @@ nav input {
 /* MAIN */
 
 h1 {
-    margin-top: 200px;
+    margin-top: 175px;
     margin-left: 5%;
     margin-bottom: 20px;
     font-family: 'Poppins';
@@ -245,6 +245,12 @@ article h2 {
   font-weight: 600;
 }
 
+article h3 {
+  color: #1e1e1e;
+  padding-left: 15px;
+  font-weight: 600;
+}
+
 article p {
   padding-bottom: 25px;
 }
@@ -334,20 +340,24 @@ article a:hover svg {
   }
 
   nav ul {
-      position: fixed;
-      display: flex;
-      /* left: -100%; */
-      top: 0;
-      left: 0;
-      flex-direction: column;
-      width: 100%;
-      height: 100vh;
-      height: auto;
-      text-align: center;
-      align-items: center;
-      padding: 60px;
-      transition: 0.25s;
-      background-color: red;
+    position: fixed;
+    display: flex;
+    /* left: -100%; */
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    padding: 60px;
+    transition: 0.25s;
+    /* background-color: red;
+    backdrop-filter: blur(5px); */
+    background-color: rgba(225, 225, 225, 0.332);
+    backdrop-filter: blur(15px);
+    height: 100vh;
   }
   nav li {
     position: relative;
@@ -357,9 +367,10 @@ article a:hover svg {
   }
   .search {
     display: flex;
-    width: 200px;
+    width: 80%;
     align-items: center;
     margin: 0 auto;
+    border: 1px solid gray;
   }
 
   #active ul {
@@ -382,69 +393,112 @@ article a:hover svg {
   .descente {
     display: none;
   }
+
+  /* ARTICLE */
+
+  section {
+    background-color: rgba(226, 226, 226, 0.533);
+    padding: 20px;
+    flex-direction: row;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    width: 100%;
+    box-shadow: 0px 0px 10px 0px gray;
+  }
+
+  article {
+    background-color: #f2f2f2;
+    width: 300px;
+    height: auto;
+    box-shadow: 2px 2px 2px 2px gray;
+    margin: 20px;
+    margin-bottom: 20px;
+    border-radius: 16px;
+    cursor: default;
+  }
+  
+  article img {
+    height: 300px;
+    border-radius: 16px;
+  }
+  
+  article h2 {
+    color: gray;
+    padding-left: 15px;
+    font-weight: 600;
+  }
+  
+  article p {
+    padding-bottom: 25px;
+  }
+  
+  article a {
+    color: gray;
+    padding-left: 15px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    transition: 0.25s;
+    padding-bottom: 10px;
+  }
+  
+  article a {
+    font-weight: 600;
+  }
+  
+  article a svg {
+    color: gray;
+    padding-left: 15px;
+    font-weight: 500;
+    transition: 0.25s;
+    display: none;
+    height: 20px;
+    align-items: center;
+  }
+  
+  article a:hover svg {
+    display: flex;
+    transition: 0.25s;
+  }
 }
 
-/* @media(max-width: 483px) {
 
-.header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 120px;
-  display: flex;
-  align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px 5px;
-  background-color: white;
+
+
+
+/* MAIN.JS */
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;800&family=Plus+Jakarta+Sans:wght@500&family=Poppins:wght@200;300;400&display=swap');
+
+input {
+    /* padding: 15px;
+    width: 50%;
+    border-radius: 30px;
+    background-color: #fafafa;
+    border: 1px solid black; */
 }
 
-.logo {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  border-radius: 30px;
-  font-size: 70px;
-  height: 0;
-  width: 80px;
-  margin-left: 3%;
-  top: -5%;
+p {
+    margin-top: 20px;
+    font-size: 1.2em;
 }
 
-nav a {
-  font-weight: 500;
-  font-size: 18px;
-  align-items: center;
-  color: black;
-  padding-left: 20px;
-
-  position: relative;
-  left: 12%;
+div {
+    /* border: 2px solid gray; */
+    box-shadow: 3px 3px 3px gray;
+    height: 100%;
+    width: 100%;
+    background-color: #dfdfdf;
+    display: none;
+    position: fixed;
+    top: 120px;
 }
 
-.active {
-  color: gray;
-  font-weight: 700;
-  font-size: 22px;
+li {
+    list-style: none;
+    /* padding-left: 15px;
+    padding-top: 10px; */
 }
-
-nav a:hover{
-  color: gray;
-  transition: 0.3s;
-}
-
-nav input {
-  font-size: 15px;
-  margin-left: 160px;
-  height: 50px;
-  width: 450px;
-  border-radius: 30px;
-  padding: 15px;
-  background-color: #f2f2f2;
-  border: none;
-  outline: none;
-  color: black;
-}
-
-.logs {
-  display: none;
-}
-} */
