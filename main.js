@@ -5,7 +5,7 @@ const artists = [
     'Heezy Lee', 'Mellow', 'V€nus', 'Le motif'
   ];
   
-  const div = document.querySelector('#suggest')
+  const div = document.querySelector('#cards')
   
   const input = document.querySelector('input');
   

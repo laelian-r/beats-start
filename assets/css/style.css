@@ -19,17 +19,6 @@ body {
 
 /* HEADER */
 
-/* header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 120px;
-    display: flex;
-    align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px 5px;
-    background-color: white;
-} */
-
 header {
   position: fixed;
   top: 0;
@@ -97,7 +86,7 @@ nav ul {
 
 nav a:hover{
     color: gray;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 nav input {
@@ -181,10 +170,15 @@ p {
     margin: 52px auto;
 } */
 
-.descente img {
+.descente svg {
   display: flex;
   height: 50px;
   margin: 60px auto;
+  border: 2px solid gray;
+  border-radius: 100%;
+  padding: 10px;
+  height: 50px;
+  width: 50px;
 }
 
 
@@ -214,12 +208,13 @@ article #img {
 section {
   background-color: rgba(226, 226, 226, 0.533);
   padding: 20px;
-  flex-direction: row;
+  /* flex-direction: row; */
   display: flex;
   gap: 1em;
   justify-content: center;
   width: 100%;
   box-shadow: 0px 0px 10px 0px gray;
+  flex-wrap: wrap;
 }
 
 article {
@@ -227,16 +222,16 @@ article {
   width: 300px;
   height: auto;
   box-shadow: 2px 2px 2px 2px gray;
-  margin: 20px;
-  margin-bottom: 20px;
+  margin: 20px 20px 0 20px;
   border-radius: 16px;
   cursor: default;
-  flex-direction: row;
+
+  transition: 0.5s;
 }
 
 article img {
   height: 300px;
-  border-radius: 16px;
+  border-radius: 16px 16px 16px 16px;
 }
 
 article h2 {
@@ -253,50 +248,43 @@ article h3 {
 
 article p {
   padding-bottom: 25px;
+  width: 100%;
 }
 
 article a {
   color: gray;
-  padding-left: 15px;
+  margin-left: 15px;
   font-weight: 500;
-  display: flex;
+  display: inline-flex;
+  height: 3%;
   align-items: center;
-  transition: 0.25s;
-  padding-bottom: 10px;
-}
 
-/* article a:hover {
-  font-weight: 500;
   transition: 0.5s;
-} */
-
-/* article a:hover svg {
-  color: gray;
-  padding-left: 15px;
-  font-weight: 500;
-  transition: 0.25s;
-  display: block;
-  height: 15px;
-  align-items: center;
-} */
+}
 
 article a {
   font-weight: 600;
+  margin-bottom: 10px;
+  background: none;
+
+  transition: 0.5s;
 }
 
-article a svg {
-  color: gray;
-  padding-left: 15px;
+article a i {
+  color: black;
+  margin-left: 15px;
   font-weight: 500;
-  transition: 0.25s;
-  display: none;
-  height: 20px;
+  transition: 0.5s;
+  height: 100%;
+  width: auto;
   align-items: center;
+  display: none !important;
 }
 
-article a:hover svg {
-  display: flex;
-  transition: 0.25s;
+article a:hover i {
+  display: flex !important;
+  transition: 0.5s;
+  color: gray;
 }
 
 /* Fin de toutes les cartes */
@@ -473,13 +461,13 @@ article a:hover svg {
 
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;800&family=Plus+Jakarta+Sans:wght@500&family=Poppins:wght@200;300;400&display=swap');
 
-input {
-    /* padding: 15px;
+/* input {
+    padding: 15px;
     width: 50%;
     border-radius: 30px;
     background-color: #fafafa;
-    border: 1px solid black; */
-}
+    border: 1px solid black;
+} */
 
 p {
     margin-top: 20px;
