@@ -84,6 +84,16 @@ nav ul {
     font-size: 22px;
 }
 
+.logs-active {
+  font-weight: 700;
+  font-size: 22px;
+  color: gray;
+  /* padding-left: 20px; */
+
+  position: relative;
+  left: 150%;
+}
+
 nav a:hover{
     color: gray;
     transition: 0.5s;
@@ -103,13 +113,13 @@ nav input {
 }
 
 .logs {
-    font-weight: 500;
-    font-size: 18px;
-    color: gray;
-    /* padding-left: 20px; */
+  font-weight: 500;
+  font-size: 18px;
+  color: gray;
+  /* padding-left: 20px; */
 
-    position: relative;
-    left: 180%;
+  position: relative;
+  left: 180%;
 }
 
 
