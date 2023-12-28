@@ -1,0 +1,100 @@
+* {
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+label {
+    display: none;
+}
+
+@media(max-width: 768px) {
+    header {
+        height: 13%;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        box-shadow: 0px 3px 3px #dfdfdf;
+    }
+
+    .logo {
+        background: none;
+        height: 100px;
+        margin-left: 5%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15%;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        background-color: #f2f2f2;
+        width: 90%;
+        height: 80%;
+        margin: 10%;
+        padding: 20px;
+        border-radius: 5%;
+        box-shadow: 3px 3px 3px gray;
+    }
+
+    h2 {
+        text-align: center;
+        margin: 5%;
+    }
+
+    input {
+        padding: 10px 10px 10px 20px;
+        border-radius: 25px;
+        border: none;
+        margin: 3%;
+        outline-color: black;
+        background-color: #fafafa;
+    }
+
+    .test {
+        font-size: 0.8rem;
+        margin-left: 8%;
+    }
+
+    button {
+        height: 35px;
+        padding: 3% 5% 3% 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10%;
+        border-radius: 25px;
+        border: 1px solid black;
+        background-color: #fafafa;
+    }
+
+    button:focus {
+        background-color: black;
+        color: white;
+    }
+
+    .sign-in, .log-in {
+        color: black;
+        font-size: 1rem;
+
+        display: flex;
+        justify-content: center;
+    }
+}
