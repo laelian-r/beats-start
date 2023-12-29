@@ -29,8 +29,8 @@
               
               <input type="search" id="search" name="search" placeholder="Rechercher">
               
-              <li><a href="./pages/log_in.html" class="logs">Connexion</a></li>
-              <li><a href="./pages/regestration.html" class="logs">Inscription</a></li>
+              <li><a href="./pages/log_in.php" class="logs">Connexion</a></li>
+              <li><a href="./pages/regestration.php" class="logs">Inscription</a></li>
           </ul>
       </nav>
 
