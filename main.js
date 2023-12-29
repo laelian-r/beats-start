@@ -45,3 +45,8 @@ const artists = [
     }
     return results;
   }
+
+
+  // MENU
+  const menu = document.querySelector("#menu");
+

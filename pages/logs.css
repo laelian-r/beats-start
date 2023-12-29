@@ -30,6 +30,12 @@ label {
         height: 100px;
         margin-left: 5%;
     }
+    
+   .menu {
+        position: absolute;
+        right: 10%;
+        height: 5%;
+    }
 
     nav {
         display: none;
