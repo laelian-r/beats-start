@@ -30,7 +30,7 @@
               <input type="search" id="search" name="search" placeholder="Rechercher">
               
               <li><a href="#" class="logs-active">Connexion</a></li>
-              <li><a href="#" class="logs">Inscription</a></li>
+              <li><a href="./regestration.php" class="logs">Inscription</a></li>
           </ul>
       </nav>
 
@@ -53,7 +53,7 @@
 
           <button>Se connecter</button>
           
-          <a href="./regestration.html" class="sign-in">S'inscrire</a>
+          <a href="./regestration.php" class="sign-in">S'inscrire</a>
         </form>
       </div>
     </main>
