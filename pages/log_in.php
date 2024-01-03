@@ -39,15 +39,33 @@
     </header>
 
     <main>
+
+      <div class="boxAlert" id="boxAlert">
+        <?php
+          if ($_SERVER["REQUEST_METHOD"] == "POST") {
+              $username = $_POST['username'];
+              $password = $_POST['password'];
+
+              if (empty($username) || empty($password)) {
+                  echo '<p class="message">Veuillez remplir tous les champs du formulaire.</p>';
+              } else {
+                  // Tous les champs sont remplis, vous pouvez effectuer d'autres actions ici
+                  // Par exemple, traiter les données du formulaire
+                  // Par souci de sécurité, assurez-vous de valider et de traiter correctement ces données avant de les utiliser dans votre application
+              }
+          }
+        ?>
+      </div>
+
       <div class="container">
         <form action="" method="post">
           <h2>Connexion</h2>
 
           <label for="username">username</label>
-          <input type="text" name="username" id="username" placeholder="Nom d'artiste">
+          <input type="text" name="username" id="username" placeholder="Nom d'artiste" require>
           
           <label for="password">password</label>
-          <input type="password" name="password" id="password" placeholder="Mot de passe">
+          <input type="password" name="password" id="password" placeholder="Mot de passe" require>
           
           <a href="" class="test">Mot de passe oublié</a>
 

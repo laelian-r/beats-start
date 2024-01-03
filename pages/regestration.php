@@ -39,23 +39,47 @@
     </header>
 
     <main>
+
+      <div class="boxAlert" id="boxAlert">
+        <?php
+          if ($_SERVER["REQUEST_METHOD"] == "POST") {
+              $username = $_POST['username'];
+              $email = $_POST['email'];
+              $phone = $_POST['phone'];
+              $password = $_POST['password'];
+              $cpassword = $_POST['cpassword'];
+
+              if (empty($username) || empty($email) || empty($phone) || empty($password) || empty($cpassword)) {
+                  echo '<p class="message">Veuillez remplir tous les champs du formulaire.</p>';
+              } else {
+                  // Tous les champs sont remplis, vous pouvez effectuer d'autres actions ici
+                  // Par exemple, traiter les données du formulaire
+                  // Par souci de sécurité, assurez-vous de valider et de traiter correctement ces données avant de les utiliser dans votre application
+              }
+          }
+        ?>
+      </div>
+
       <div class="container">
         <form action="" method="post">
           <h2>Inscription</h2>
 
           <label for="username">username</label>
-          <input type="text" name="username" id="username" placeholder="Nom d'artiste">
+          <input type="text" name="username" id="username" placeholder="Nom d'artiste" require>
           
           <label for="email">email</label>
-          <input type="email" name="email" id="email" placeholder="Adresse email">
+          <input type="email" name="email" id="email" placeholder="Adresse email" require>
+
+          <label for="phone">phone</label>
+          <input type="number" name="phone" id="phone" placeholder="Numéro de téléphone" require>
           
           <label for="password">password</label>
-          <input type="password" name="password" id="password" placeholder="Mot de passe">
+          <input type="password" name="password" id="password" placeholder="Mot de passe" require>
 
           <label for="cpassword">cpassword</label>
-          <input type="password" name="cpassword" id="cpassword" placeholder="Répéter le mot de passe">
+          <input type="password" name="cpassword" id="cpassword" placeholder="Répéter le mot de passe" require>
 
-          <button>S'Inscrire</button>
+          <button id="btn">Suivant</button>
           
           <a href="./log_in.php" class="log-in">Se connecter</a>
         </form>
